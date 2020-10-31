@@ -43,7 +43,12 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     // Other
-    radix: 'warn'
+    radix: 'warn',
+    // Overrides for ESLINT config
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': 'error',
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': 'error'
   },
   settings: {
     'import/resolver': {
